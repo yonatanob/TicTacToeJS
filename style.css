@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* PAGE SECTIONS */
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #1098ad;
+  padding: 32px 48px 32px 86px;
+
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 86px;
+}
+.container--inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.players-name {
+  display: flex;
+  gap: 5px;
+}
+
+#startBtn {
+  font-size: 22px;
+  padding: 26px;
+  cursor: pointer;
+}
+.resetContainer {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#resetBtn {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.grid {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+.grid td {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+.grid td.clicked {
+  background-color: yellow;
+  font-weight: bold;
+  color: red;
+  /* Disables the clicked Button */
+}
+.disabled {
+  pointer-events: none;
+}
